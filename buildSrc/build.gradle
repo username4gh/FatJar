@@ -1,0 +1,23 @@
+apply plugin: 'groovy'
+
+group 'com.kyokose.gradle'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+configurations {
+    jar.archiveName = 'fatjar-' + version + '.jar'
+}
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
