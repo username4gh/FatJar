@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-
+        classpath 'com.github.github:site-maven-plugin:0.10'
     }
 }
 
