@@ -1,3 +1,9 @@
+# What's this thing for?
+
+[how to build a jar with all the libs in it](https://stackoverflow.com/questions/3445825/gradle-how-do-i-build-a-jar-with-a-lib-dir-with-other-jars-in-it)
+
+This plugin will do this automatically for you.
+
 # Usage
 
 1. Config your build.gradle in your project-root-dir
