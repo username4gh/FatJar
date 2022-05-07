@@ -18,6 +18,7 @@ public class FatJarPlugin implements Plugin<Project> {
             project.getTasks().getByName("jar").configure {
                 from {
                     project.getConfigurations().getByName("extraLibs").collect {
+                        println(it.getName())
                         it.isDirectory() ? it : project.zipTree(it)
                     }
                 }
